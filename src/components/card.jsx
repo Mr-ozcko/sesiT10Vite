@@ -1,7 +1,8 @@
+import style from './card.module.css'
 
 export default function Card(props){
     return(
-        <div>
+        <div className={style.card}>
             <h2>{props.title}</h2>
             <img src={props.img} 
                 alt={props.title} 
