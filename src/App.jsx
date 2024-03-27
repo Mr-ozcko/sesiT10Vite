@@ -1,5 +1,6 @@
 import { Tilt } from 'react-tilt'
 import style from './App.module.css'
+import Menu from './components/menu'
 import Card from './components/card'
 import img01 from "./assets/imgs/img01.jfif"
 import img02 from "./assets/imgs/img02.jfif"
@@ -19,6 +20,8 @@ function App() {
     easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
   }
     return (
+      <>
+    <Menu/>
     <div className={style.section01}>
       <Tilt options={batata} style={{ height: 250, width: 250 }}>
         <Card 
@@ -29,19 +32,25 @@ function App() {
         />
       </Tilt>
 
-      <Card 
+      <Tilt options={batata} style={{ height: 250, width: 250 }}>
+        <Card 
         title ="paisagem 2"
         img={img02}
         teste1="descricao da imagem 02"
         teste2="colombo pr"
-      />
-      <Card 
+        />
+      </Tilt>
+
+      <Tilt options={batata} style={{ height: 250, width: 250 }}>
+        <Card 
         title ="paisagem 3"
         img={img03}
         teste1="descricao da imagem 03"
         teste2="guaratuba pr"
-      />
+        />
+      </Tilt>
     </div>
+    </>
   )
 }
 
