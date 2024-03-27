@@ -4,12 +4,14 @@ import 'leaflet-defaulticon-compatibility';
 import Menu from "./components/menu"
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
+import style from "./contact.module.css"
+
 export const Contact = () => {
     const position = [-25.4249717, -49.2748809,17]
     return(
         <>
         <Menu/>
-        <div>
+        <div className= {style.sectionContact}>
             <h1>contato</h1>
             <div>
                 <h2>mapa</h2>

@@ -12,3 +12,7 @@ body{
     background-color: var(--bg);
     color: var(--text);
 }
+
+.leaflet-control-attribution{
+    display: none;
+}

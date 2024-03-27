@@ -49,7 +49,37 @@ function App() {
         teste2="guaratuba pr"
         />
       </Tilt>
+
+      <Tilt options={batata} style={{ height: 250, width: 250 }}>
+        <Card 
+        title ="Batatinha"
+        img={img01}
+        teste1="descricao da imagem"
+        teste2="curitiba pr"
+        />
+      </Tilt>
+
+      <Tilt options={batata} style={{ height: 250, width: 250 }}>
+        <Card 
+        title ="paisagem 2"
+        img={img02}
+        teste1="descricao da imagem 02"
+        teste2="colombo pr"
+        />
+      </Tilt>
+
+      <Tilt options={batata} style={{ height: 250, width: 250 }}>
+        <Card 
+        title ="paisagem 3"
+        img={img03}
+        teste1="descricao da imagem 03"
+        teste2="guaratuba pr"
+        />
+      </Tilt>
     </div>
+     
+    
+
     </>
   )
 }
